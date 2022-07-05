@@ -1,0 +1,7 @@
+term.clear()
+term.setCursorPos(1,1)
+fs.delete("install")
+fs.delete("eject")
+fs.copy("disk/install.lua", "install.lua")
+fs.copy("disk/eject.lua", "eject.lua")
+print("First time installation? Type 'install' to begin. If not, type 'eject'.")
